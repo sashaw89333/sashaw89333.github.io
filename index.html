@@ -8,6 +8,7 @@
         <!--
         <img src="cat.jpg">
         -->
+        
         <div>
             <label for="test1">test1</label>
             <input type="number" id="num1">
@@ -17,6 +18,12 @@
     <script>
     console.log("We are inside the web!");
     alert("Hello World :)");
+    var compute = document.querySelector(".submit");
+    
+    function test(){
+        document.querySelector(".results").innerHTML = parseInt(document.getElementaryById("num1").value);
+    }
+    compute.addEventListener("click", test);
     </script>
     </body>
 </html>
