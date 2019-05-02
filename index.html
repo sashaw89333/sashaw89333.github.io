@@ -4,46 +4,36 @@
         <title>January 6th</title>
     </head>
     <body>
-        <h1>This is the bad place!</h1>
-        <!--
-        <img src="cat.jpg">
-        -->
-        
         <div>
-            <label for="sideA">Side A</label>
+            <label for="valueA">Value A</label>
             <input type="number" value="0" class="sideA">
         </div>
         
         <div>
-            <label for="sideB">Side B</label>
+            <label for="valueB">Value B</label>
             <input type="number" value="0" class="sideB">
         </div>
         <dive>
-            <label for="sideC">Side C</label>
+            <label for="valueC">Value C</label>
             <input type="submit" value="submit" class="submit">
             <p class="results">nothing</p>
         </dive>
     <script>
-    console.log("We are inside the web!");
-    //alert("Hello World :)");
     var compute = document.querySelector(".submit");
     
-    function pythagoras(){
-        var a = parseFloat(document.querySelector(".sideA").value);
+    function math(){
+        var a = parseFloat(document.querySelector(".valueA").value);
         console.log(a);
         
-        var b = parseFloat(document.querySelector(".sideB").value);
+        var b = parseFloat(document.querySelector(".valueB").value);
         console.log(b);
         
         var out = document.querySelector(".results");
         // perform math
-        var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        var c = Math.add(a) + Math.add(b);
         
         out.innerHTML = parseFloat(c);
-        
-        //document.querySelector(".results").innerHTML = parseInt(document.querySelector("num1").value);
     }
-    compute.addEventListener("click", pythagoras);
     </script>
     </body>
 </html>
