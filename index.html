@@ -6,12 +6,12 @@
     <body>
         <div>
             <label for="valueA">Value A</label>
-            <input type="number" value="0" class="sideA">
+            <input type="number" value="0" class="valueA">
         </div>
         
         <div>
             <label for="valueB">Value B</label>
-            <input type="number" value="0" class="sideB">
+            <input type="number" value="0" class="valueB">
         </div>
         <dive>
             <label for="valueC">Value C</label>
@@ -29,9 +29,9 @@
         console.log(b);
         
         var out = document.querySelector(".results");
-        // perform math
         var c = Math.add(a) + Math.add(b);
-        
+        //var c = Math.subtract(a) + Math.subtract(b);
+
         out.innerHTML = parseFloat(c);
     }
     </script>
