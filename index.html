@@ -13,26 +13,38 @@
             <label for="valueB">Value B</label>
             <input type="number" value="0" class="valueB">
         </div>
-        <dive>
-            <label for="valueC">Value C</label>
+        <div>
+            <label for="valueAdd">Value Add</label>
             <input type="submit" value="submit" class="submit">
             <p class="results">nothing</p>
-        </dive>
+            <label for="valueSub">Value Sub</label>
+            <input type="submit" value="submit" class="submit">
+            <p class="results">nothing</p>
+            <label for="valueMult">Value Mult</label>
+            <input type="submit" value="submit" class="submit">
+            <p class="results">nothing</p>
+            <label for="valueDiv">Value Div</label>
+            <input type="submit" value="submit" class="submit">
+            <p class="results">nothing</p>
+        </div>
     <script>
     var compute = document.querySelector(".submit");
     
     function math(){
         var a = parseFloat(document.querySelector(".valueA").value);
-        console.log(a);
         
         var b = parseFloat(document.querySelector(".valueB").value);
-        console.log(b);
         
         var out = document.querySelector(".results");
-        var c = Math.add(a) + Math.add(b);
-        //var c = Math.subtract(a) + Math.subtract(b);
+        var Add = Math(a) + Math(b);
+        var Sub = Math(a) - Math(b);
+        var Mult = Math(a) * Math(b);
+        var Div = Math(a) / Math(b);
 
-        out.innerHTML = parseFloat(c);
+        out.innerHTML = parseFloat(Add);
+        out.innerHTML = parseFloat(Sub);
+        out.innerHTML = parseFloat(Mult);
+        out.innerHTML = parseFloat(Div);
     }
     compute.addEventListener("click", math);
     </script>
