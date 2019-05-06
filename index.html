@@ -14,16 +14,7 @@
             <input type="number" value="0" class="valueB">
         </div>
         <div>
-            <label for="valueAdd">Value Add</label>
-            <input type="submit" value="submit" class="submit">
-            <p class="results">nothing</p>
-            <label for="valueSub">Value Sub</label>
-            <input type="submit" value="submit" class="submit">
-            <p class="results">nothing</p>
-            <label for="valueMult">Value Mult</label>
-            <input type="submit" value="submit" class="submit">
-            <p class="results">nothing</p>
-            <label for="valueDiv">Value Div</label>
+            <label for="Output">Output</label>
             <input type="submit" value="submit" class="submit">
             <p class="results">nothing</p>
         </div>
@@ -35,16 +26,15 @@
         
         var b = parseFloat(document.querySelector(".valueB").value);
         
-        var out = document.querySelector(".results");
-        var Add = Math(a) + Math(b);
-        var Sub = Math(a) - Math(b);
-        var Mult = Math(a) * Math(b);
-        var Div = Math(a) / Math(b);
+        var add = document.querySelector(".add");
+        var subtract = document.querySelector(".subtract");
+        var multiply = document.querySelector(".multiply");
+        var divide = document.querySelector(".divide");
 
-        out.innerHTML = parseFloat(Add);
-        out.innerHTML = parseFloat(Sub);
-        out.innerHTML = parseFloat(Mult);
-        out.innerHTML = parseFloat(Div);
+        add.innerHTML = a + b;
+        subtract.innerHTML = a - b;
+        multiply.innerHTML = a * b;
+        divide.innerHTML = a / b;
     }
     compute.addEventListener("click", math);
     </script>
