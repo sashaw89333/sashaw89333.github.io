@@ -1,49 +1,20 @@
 <!doctype html>
 <html>
     <head>
-        <title>January 6th</title>
+        <title>JS Array</title>
     </head> 
     <body>
-        <div>
-            <label for="valueA">Value A</label>
-            <input type="number" value="0" class="valueA">
-        </div>
+        <input type="submit" value="submit" class="submit">
+        <p class="out">Nothing yet</p>
         
-        <div>
-            <label for="valueB">Value B</label>
-            <input type="number" value="0" class="valueB">
-        </div>
-        <div>
-            <label for="Output">Output</label>
-            <input type="submit" value="submit" class="submit">
-            <p class="add">nothing</p>
-            <p class="subtract">nothing</p>
-            <p class="multiply">nothing</p>
-            <p class="divide">nothing</p>
-        </div>
-        <div>
-            <input type="radio" name="response" value="yes" class="yes" checked>Yes<br>
-            <input type="radio" name="response" value="no" class="no">No<br>
-        </div>
     <script>
-    var compute = document.querySelector(".submit");
+    var submit = document.querySelector(".submit");
+    var out = document.querySelector(".out");
+    var arr = ["yes", "no", "maybe"];
     
-    function math(){
-        var a = parseFloat(document.querySelector(".valueA").value);
-        
-        var b = parseFloat(document.querySelector(".valueB").value);
-        
-        var add = document.querySelector(".add");
-        var subtract = document.querySelector(".subtract");
-        var multiply = document.querySelector(".multiply");
-        var divide = document.querySelector(".divide");
-
-        add.innerHTML = a + b;
-        subtract.innerHTML = a - b;
-        multiply.innerHTML = a * b;
-        divide.innerHTML = a / b;
-    }
-    compute.addEventListener("click", math);
+    console.log(arr[0]);
+    console.log(arr[1]);
+    console.log(arr[1]);
     </script>
     </body>
 </html>
