@@ -1,20 +1,21 @@
 <!doctype html>
 <html>
     <head>
-        <title>JS Array</title>
+        <title>Quiz</title>
     </head> 
     <body>
         <div>
-            <input type="radio" name="response" value="yes" checked>Yes<br>
-            <input type="radio" name="response" value="no">No<br>
-            <input type="radio" name="response" value="maybe">maybe<br>
-            <input type="radio" name="response" value="sure why not">sure why not<br>
-            <input type="radio" name="response" value="what no how">what no how<br>
+            <label for="Who was Jake\'s childhood best friend?">Who was Jake\'s childhood best friend?</label>
+            <input type="radio" name="response" value="Gina Linetti" checked>Gina Linetti<br>
+            <input type="radio" name="response" value="Rosa Diaz">Rosa Diaz<br>
+            <input type="radio" name="response" value="Amy Santiago">Amy Santiago<br>
+            <input type="radio" name="response" value="He had no friends.">He had no friends.<br>
         </div>
         <input type="submit" value="submit" class="submit">
         <p class="out">Nothing yet</p>
         
     <script>
+    var answers = []
     var submit = document.querySelector(".submit");
     var out = document.querySelector(".out");
     
