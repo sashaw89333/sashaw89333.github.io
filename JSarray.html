@@ -70,8 +70,41 @@
             }
         }
     }
-    
-    submit.addEventListener("click", answer1, answer2);
+    function answer3(){
+        var radios = document.getElementsByName("response");
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i] == "Die Hard"){
+                    out.innerHTML = "correct";
+                }
+                else{
+                    out.innerHTML = "wrong";
+                }
+                out.innerHTML = radios[i].value;
+                break;
+            }
+        }
+    }
+    function answer4(){
+        var radios = document.getElementsByName("response");
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i] == "Taylor Swift"){
+                    out.innerHTML = "correct";
+                }
+                else{
+                    out.innerHTML = "wrong";
+                }
+                out.innerHTML = radios[i].value;
+                break;
+            }
+        }
+    }
+
+    submit.addEventListener("click", answer1);
+    submit.addEventListener("click", answer2);
+    submit.addEventListener("click", answer3);
+    submit.addEventListener("click", answer4);
     </script>
     </body>
     
