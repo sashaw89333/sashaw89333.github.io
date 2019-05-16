@@ -6,8 +6,8 @@
     <body>
         <div>
             <p>Who was Jake's childhood best friend?</p>
-            <input type="radio" name="response" value="Gina Linetti" checked>Gina Linetti<br>
-            <input type="radio" name="response" value="Rosa Diaz">Rosa Diaz<br>
+            <input type="radio" name="response" value="Rosa Diaz" checked>Rosa Diaz<br>
+            <input type="radio" name="response" value="Gina Linetti">Gina Linetti<br>
             <input type="radio" name="response" value="Amy Santiago">Amy Santiago<br>
             <input type="radio" name="response" value="He had no friends.">He had no friends.<br>
             <p>How old was Jake when his father left?</p>
@@ -15,26 +15,57 @@
             <input type="radio" name="response" value="8">8<br>
             <input type="radio" name="response" value="9">9<br>
             <input type="radio" name="response" value="10">10<br>
+            <p>What is Jake's favorite movie?</p>
+            <input type="radio" name="response" value="RoboCop" checked>RoboCop<br>
+            <input type="radio" name="response" value="Leathal Weapon">Leathal Weapon<br>
+            <input type="radio" name="response" value="Training Day">Training Day<br>
+            <input type="radio" name="response" value="Die Hard">Die Hard<br>
+            <p>Who is Jake's favorite musician??</p>
+            <input type="radio" name="response" value="Nickleback" checked>Nickleback<br>
+            <input type="radio" name="response" value="Greenday">Greenday<br>
+            <input type="radio" name="response" value="Taylor Swift">Taylor Swift<br>
+            <input type="radio" name="response" value="Beyonce">Beyonce<br>
         </div>
         <input type="submit" value="submit" class="submit">
         <p class="out">Nothing yet</p>
         
     <script>
-    var answers = []
+    var answers = [];
     var submit = document.querySelector(".submit");
     var out = document.querySelector(".out");
     
-    function reply(){
+    function answer1(){
         var radios = document.getElementsByName("response");
         for(var i = 0; i < radios.length; i++){
             if(radios[i].checked){
+                if(radios[i] == "Gina Linetti"){
+                    out.innerHTML = "correct";
+                }
+                else{
+                    out.innerHTML = "wrong";
+                }
+                out.innerHTML = radios[i].value;
+                break;
+            }
+        }
+    }
+    function answer2(){
+        var radios = document.getElementsByName("response");
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i] == "7"){
+                    out.innerHTML = "correct";
+                }
+                else{
+                    out.innerHTML = "wrong";
+                }
                 out.innerHTML = radios[i].value;
                 break;
             }
         }
     }
     
-    submit.addEventListener("click", reply);
+    submit.addEventListener("click", answer1, answer2);
     </script>
     </body>
     
