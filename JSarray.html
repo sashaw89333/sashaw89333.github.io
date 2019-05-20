@@ -36,74 +36,73 @@
         </div>
         
     <script>
-    var submit = document.querySelector(".submit");
-    var out = document.querySelector(".out");
+        var submit = document.querySelector(".submit");
+        var out = document.querySelector(".out");
+        
+        function answer1(){
+            var radios = document.getElementsByName("question1");
+            for(var i = 0; i < radios.length; i++){
+                if(radios[i].checked){
+                    if(radios[i] == "Gina Linetti"){
+                        out.innerHTML = "correct";
+                    }
+                    else{
+                        out.innerHTML = "wrong";
+                    }
+                    out.innerHTML = radios[i].value;
+                    break;
+                }
+            }
+        function answer2(){
+            var radios = document.getElementsByName("question2");
+            for(var i = 0; i < radios.length; i++){
+                if(radios[i].checked){
+                    if(radios[i] == "7"){
+                        out.innerHTML = "correct";
+                    }
+                    else{
+                        out.innerHTML = "wrong";
+                    }
+                    out.innerHTML = radios[i].value;
+                    break;
+                }
+            }
+        }
+        function answer3(){
+            var radios = document.getElementsByName("question3");
+            for(var i = 0; i < radios.length; i++){
+                if(radios[i].checked){
+                    if(radios[i] == "Die Hard"){
+                        out.innerHTML = "correct";
+                    }
+                    else{
+                        out.innerHTML = "wrong";
+                    }
+                    out.innerHTML = radios[i].value;
+                    break;
+                }
+            }
+        }
+        function answer4(){
+            var radios = document.getElementsByName("question4");
+            for(var i = 0; i < radios.length; i++){
+                if(radios[i].checked){
+                    if(radios[i] == "Taylor Swift"){
+                        out.innerHTML = "correct";
+                    }
+                    else{
+                        out.innerHTML = "wrong";
+                    }
+                    out.innerHTML = radios[i].value;
+                    break;
+                }
+            }
+        }
     
-    function answer1(){
-        var radios = document.getElementsByName("question1");
-        for(var i = 0; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i] == "Gina Linetti"){
-                    out.innerHTML = "correct";
-                }
-                else{
-                    out.innerHTML = "wrong";
-                }
-                out.innerHTML = radios[i].value;
-                break;
-            }
-        }
-    }
-    function answer2(){
-        var radios = document.getElementsByName("question2");
-        for(var i = 0; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i] == "7"){
-                    out.innerHTML = "correct";
-                }
-                else{
-                    out.innerHTML = "wrong";
-                }
-                out.innerHTML = radios[i].value;
-                break;
-            }
-        }
-    }
-    function answer3(){
-        var radios = document.getElementsByName("question3");
-        for(var i = 0; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i] == "Die Hard"){
-                    out.innerHTML = "correct";
-                }
-                else{
-                    out.innerHTML = "wrong";
-                }
-                out.innerHTML = radios[i].value;
-                break;
-            }
-        }
-    }
-    function answer4(){
-        var radios = document.getElementsByName("question4");
-        for(var i = 0; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i] == "Taylor Swift"){
-                    out.innerHTML = "correct";
-                }
-                else{
-                    out.innerHTML = "wrong";
-                }
-                out.innerHTML = radios[i].value;
-                break;
-            }
-        }
-    }
-
-    submit.addEventListener("click", answer1);
-    submit.addEventListener("click", answer2);
-    submit.addEventListener("click", answer3);
-    submit.addEventListener("click", answer4);
+        submit.addEventListener("click", answer1);
+        submit.addEventListener("click", answer2);
+        submit.addEventListener("click", answer3);
+        submit.addEventListener("click", answer4);
     </script>
     </body>
     
