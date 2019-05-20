@@ -10,35 +10,34 @@
             <input type="radio" name="question1" value="Gina Linetti">Gina Linetti<br>
             <input type="radio" name="question1" value="Amy Santiago">Amy Santiago<br>
             <input type="radio" name="question1" value="He had no friends.">He had no friends.<br>
-            <input type="submit" value="submit" class="submit">
-            <p class="out">Nothing yet</p>
+            <input type="submit" value="question1" class="question1">
+            <p class="out1">Nothing yet</p>
             <p>How old was Jake when his father left?</p>
             <input type="radio" name="question2" value="7" checked>7<br>
             <input type="radio" name="question2" value="8">8<br>
             <input type="radio" name="question2" value="9">9<br>
             <input type="radio" name="question2" value="10">10<br>
-            <input type="submit" value="submit" class="submit">
-            <p class="out">Nothing yet</p>
+            <input type="submit" value="question2" class="question2">
+            <p class="out2">Nothing yet</p>
             <p>What is Jake's favorite movie?</p>
             <input type="radio" name="question3" value="RoboCop" checked>RoboCop<br>
             <input type="radio" name="question3" value="Leathal Weapon">Leathal Weapon<br>
             <input type="radio" name="question3" value="Training Day">Training Day<br>
             <input type="radio" name="question3" value="Die Hard">Die Hard<br>
-            <input type="submit" value="submit" class="submit">
-            <p class="out">Nothing yet</p>
+            <input type="submit" value="question3" class="question3">
+            <p class="out3">Nothing yet</p>
             <p>Who is Jake's favorite musician??</p>
             <input type="radio" name="question4" value="Nickleback" checked>Nickleback<br>
             <input type="radio" name="question4" value="Greenday">Greenday<br>
             <input type="radio" name="question4" value="Taylor Swift">Taylor Swift<br>
             <input type="radio" name="question4" value="Beyonce">Beyonce<br>
-            <input type="submit" value="submit" class="submit">
-            <p class="out">Nothing yet</p>
+            <input type="submit" value="question4" class="question4">
+            <p class="out4">Nothing yet</p>
         </div>
         
     <script>
-        var submit = document.querySelector(".submit");
-        var out = document.querySelector(".out");
-        
+        var question1 = document.querySelector(".question1");
+        var out1 = document.querySelector(".out1");
         function answer1(){
             var radios = document.getElementsByName("question1");
             for(var i = 0; i < radios.length; i++){
@@ -53,6 +52,8 @@
                     break;
                 }
             }
+        var question2 = document.querySelector(".question2");
+        var out2 = document.querySelector(".out2");
         function answer2(){
             var radios = document.getElementsByName("question2");
             for(var i = 0; i < radios.length; i++){
@@ -68,6 +69,8 @@
                 }
             }
         }
+        var question3 = document.querySelector(".question3");
+        var out3 = document.querySelector(".out3");
         function answer3(){
             var radios = document.getElementsByName("question3");
             for(var i = 0; i < radios.length; i++){
@@ -83,6 +86,8 @@
                 }
             }
         }
+        var question4 = document.querySelector(".question4");
+        var out4 = document.querySelector(".out4");
         function answer4(){
             var radios = document.getElementsByName("question4");
             for(var i = 0; i < radios.length; i++){
@@ -99,10 +104,10 @@
             }
         }
     
-        submit.addEventListener("click", answer1);
-        submit.addEventListener("click", answer2);
-        submit.addEventListener("click", answer3);
-        submit.addEventListener("click", answer4);
+        question1.addEventListener("click", answer1);
+        question2.addEventListener("click", answer2);
+        question3.addEventListener("click", answer3);
+        question4.addEventListener("click", answer4);
     </script>
     </body>
     
