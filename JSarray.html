@@ -10,7 +10,7 @@
             <input type="radio" name="question1" value="Gina Linetti">Gina Linetti<br>
             <input type="radio" name="question1" value="Amy Santiago">Amy Santiago<br>
             <input type="radio" name="question1" value="He had no friends.">He had no friends.<br>
-            <input type="submit" value="" class="question1">
+            <input type="submit" value="question1" class="question1">
             <p class="out1">Nothing yet</p>
             <p>How old was Jake when his father left?</p>
             <input type="radio" name="question2" value="7" checked>7<br>
@@ -52,6 +52,7 @@
                     break;
                 }
             }
+        }
         var question2 = document.querySelector(".question2");
         var out2 = document.querySelector(".out2");
         function answer2(){
@@ -103,7 +104,6 @@
                 }
             }
         }
-    
         question1.addEventListener("click", answer1);
         question2.addEventListener("click", answer2);
         question3.addEventListener("click", answer3);
