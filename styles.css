@@ -1,5 +1,19 @@
+html{
+    width: 100%;
+    background-color: gray;
+}
+
+body{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
 p {
-    font-size: 12;
+    font-size: x-large;
     font-family: fantasy;
     color: blue;
 }
@@ -7,5 +21,5 @@ p {
 .q1{
     font-size: x-large;
     font-family: cursive;
-    color: blue;
+    color: green;
 }
