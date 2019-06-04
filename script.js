@@ -1,5 +1,3 @@
-var counter = 0;
-var out5 = document.querySelector(".out5");
 var question1 = document.querySelector(".question1");
 var out1 = document.querySelector(".out1");
 function answer1(){
@@ -9,7 +7,6 @@ function answer1(){
             console.log(radios[i]);
             if(radios[i].value == "Gina Linetti"){
                 out1.innerHTML = "correct";
-                counter++;
             }
             else{
                 out1.innerHTML = "wrong";
@@ -27,7 +24,6 @@ function answer2(){
         if(radios[i].checked){
             if(radios[i].value == "7"){
                 out2.innerHTML = "correct";
-                counter++;
             }
             else{
                 out2.innerHTML = "wrong";
@@ -45,7 +41,6 @@ function answer3(){
         if(radios[i].checked){
             if(radios[i].value == "Die Hard"){
                 out3.innerHTML = "correct";
-                counter++;
             }
             else{
                 out3.innerHTML = "wrong";
@@ -63,7 +58,6 @@ function answer4(){
         if(radios[i].checked){
             if(radios[i].value == "Taylor Swift"){
                 out4.innerHTML = "correct";
-                counter++;
             }
             else{
                 out4.innerHTML = "wrong";
@@ -73,7 +67,6 @@ function answer4(){
         }
     }
 }
-out5.addEventListener("click", out5);
 question1.addEventListener("click", answer1);
 question2.addEventListener("click", answer2);
 question3.addEventListener("click", answer3);
