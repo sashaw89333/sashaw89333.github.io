@@ -18,7 +18,7 @@ p {
     padding-top: 1%;
     padding-bottom: 1%;
     font-family: 'Roboto', sans-serif;
-    color: blue;
+    color: #212f3c;
 }
 
 .q1{
@@ -26,9 +26,20 @@ p {
     font-family: cursive;
     color: green;
 }
+
 div{
+    padding-left: 2%;
     text-align: left;
     margin: 1%;
     border-radius: 2px;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+submit{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: #212f3c;
+    text-align: left;
+    margin: 1%;
 }
